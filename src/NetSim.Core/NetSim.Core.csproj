@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>NetSim.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Catalog\catalog.json" LogicalName="NetSim.Core.Catalog.catalog.json" />
+  </ItemGroup>
+
+</Project>

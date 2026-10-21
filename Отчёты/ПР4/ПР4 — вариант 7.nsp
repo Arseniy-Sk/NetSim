@@ -1,0 +1,3311 @@
+{
+  "formatVersion": 1,
+  "name": "\u041F\u04204 \u2014 \u0432\u0430\u0440\u0438\u0430\u043D\u0442 7",
+  "author": "",
+  "description": "FDDI-\u043A\u043E\u043B\u044C\u0446\u043E (CDDI, UTP \u043A\u0430\u0442. 5) \u0441 WS1\u2013WS3 \u0438 \u0441\u0435\u0440\u0432\u0435\u0440\u043E\u043C 1; \u0447\u0435\u0440\u0435\u0437 \u043C\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043E\u0440 \u2014 Token Ring 16 \u041C\u0431\u0438\u0442/\u0441 (WS4, WS5, \u0441\u0435\u0440\u0432\u0435\u0440 2); \u0447\u0435\u0440\u0435\u0437 \u043C\u043E\u0441\u0442 \u2014 Fast Ethernet 100 \u041C\u0431\u0438\u0442/\u0441 (WS6\u2013WS8, \u0441\u0435\u0440\u0432\u0435\u0440 3).",
+  "root": {
+    "id": "9115ef980e79",
+    "name": "Network",
+    "background": "plain",
+    "devices": [
+      {
+        "id": "6d5092f08bc0",
+        "catalogId": "seg-fddi",
+        "kind": "segment",
+        "name": "FDDI",
+        "x": 330,
+        "y": 290,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "FDDI",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fddi0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "6E11.44C7.4549",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fddi1",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "2EF1.EFF2.82B3",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fddi2",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "E66B.1B26.5EDE",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fddi3",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "AE28.5D56.AD23",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fddi4",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "2A7D.A746.C234",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fddi5",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "CE80.7516.F439",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [
+          "averageUtilization"
+        ],
+        "childLevel": null
+      },
+      {
+        "id": "e558d5b3fd44",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "WS1",
+        "x": 150,
+        "y": 150,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-small-office-db",
+            "enabledServices": [
+              "db",
+              "cad"
+            ]
+          },
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "WS1",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "1ED8.7DCA.2094",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "56f90af9629e",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "WS2",
+        "x": 330,
+        "y": 110,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-small-office-db",
+            "enabledServices": [
+              "db",
+              "cad"
+            ]
+          },
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "WS2",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "EE7F.F3B8.E0FF",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "9bb208a5699c",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "WS3",
+        "x": 510,
+        "y": 150,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-small-office-db",
+            "enabledServices": [
+              "db",
+              "cad"
+            ]
+          },
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp"
+            ]
+          },
+          {
+            "softwareId": "sw-email-server",
+            "enabledServices": [
+              "pop3"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "WS3",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "9A83.EC1D.FA01",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "80982a11e620",
+        "catalogId": "server",
+        "kind": "server",
+        "name": "\u0421\u0435\u0440\u0432\u0435\u0440 1 (FDDI)",
+        "x": 170,
+        "y": 450,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-small-office-db",
+            "enabledServices": [
+              "db",
+              "cad"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "normal",
+            "value": 1,
+            "mean": 2048,
+            "stdDev": 512,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 512,
+            "summary": "Normal(M=2048, \u03C3=512)"
+          },
+          "replyDelay": {
+            "law": "exponential",
+            "value": 1,
+            "mean": 5,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 5,
+            "expectedStdDev": 5,
+            "summary": "Exp(M=5)"
+          }
+        },
+        "network": {
+          "hostname": "\u0421\u0435\u0440\u0432\u0435\u04401(FDDI)",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "DA8C.2FDE.2093",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [
+          "currentWorkload",
+          "packetsReceived"
+        ],
+        "childLevel": null
+      },
+      {
+        "id": "563368a8aac3",
+        "catalogId": "router",
+        "kind": "router",
+        "name": "\u041C\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043E\u0440",
+        "x": 620,
+        "y": 270,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041C\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043E\u0440",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0/1",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "0EC1.8A76.413E",
+              "isUp": false,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/2",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "1E3D.DD12.C56B",
+              "isUp": false,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "2845b13fc83d",
+        "catalogId": "seg-token-ring",
+        "kind": "segment",
+        "name": "Token Ring",
+        "x": 860,
+        "y": 230,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "TokenRing",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Tr0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "5640.1D79.BB71",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Tr1",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "4EE0.D89F.AE7E",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Tr2",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "5245.5AA5.B87F",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Tr3",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "E2E6.5C85.33AF",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [
+          "averageUtilization"
+        ],
+        "childLevel": null
+      },
+      {
+        "id": "edf9d6b676a0",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "WS4",
+        "x": 790,
+        "y": 80,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-file-server",
+            "enabledServices": [
+              "file"
+            ]
+          },
+          {
+            "softwareId": "sw-small-office-db",
+            "enabledServices": [
+              "db"
+            ]
+          },
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "WS4",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "3E81.F595.43AE",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "313b630ab50a",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "WS5",
+        "x": 980,
+        "y": 90,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-file-server",
+            "enabledServices": [
+              "file"
+            ]
+          },
+          {
+            "softwareId": "sw-small-office-db",
+            "enabledServices": [
+              "db"
+            ]
+          },
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp"
+            ]
+          },
+          {
+            "softwareId": "sw-email-server",
+            "enabledServices": [
+              "pop3"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "WS5",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "AAF7.F6D4.ABD8",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "0e0a01725ee8",
+        "catalogId": "server",
+        "kind": "server",
+        "name": "\u0421\u0435\u0440\u0432\u0435\u0440 2 (Token Ring)",
+        "x": 1010,
+        "y": 320,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-file-server",
+            "enabledServices": [
+              "file"
+            ]
+          },
+          {
+            "softwareId": "sw-small-office-db",
+            "enabledServices": [
+              "db"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "normal",
+            "value": 1,
+            "mean": 2048,
+            "stdDev": 512,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 512,
+            "summary": "Normal(M=2048, \u03C3=512)"
+          },
+          "replyDelay": {
+            "law": "normal",
+            "value": 1,
+            "mean": 2,
+            "stdDev": 0.7,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2,
+            "expectedStdDev": 0.7,
+            "summary": "Normal(M=2, \u03C3=0.7)"
+          }
+        },
+        "network": {
+          "hostname": "\u0421\u0435\u0440\u0432\u0435\u04402(TokenRing)",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "92E3.4A22.DD22",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [
+          "currentWorkload",
+          "packetsReceived"
+        ],
+        "childLevel": null
+      },
+      {
+        "id": "dd65ba3b7e4c",
+        "catalogId": "bridge",
+        "kind": "bridge",
+        "name": "\u041C\u043E\u0441\u0442",
+        "x": 450,
+        "y": 480,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041C\u043E\u0441\u0442",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Port0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "9ACE.724C.26BD",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Port1",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "46E1.25A0.63CA",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "6d95542c1522",
+        "catalogId": "switch-eth",
+        "kind": "switch",
+        "name": "\u041A\u043E\u043C\u043C\u0443\u0442\u0430\u0442\u043E\u0440 Ethernet",
+        "x": 680,
+        "y": 520,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041A\u043E\u043C\u043C\u0443\u0442\u0430\u0442\u043E\u0440Ethernet",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0/1",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "22EC.6242.22D7",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/2",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "CA81.CEE0.8B88",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/3",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "12F6.D70B.5F75",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/4",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "D6BC.61C1.2502",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/5",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "5AE8.D0DA.08B5",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [
+          "averageUtilization"
+        ],
+        "childLevel": null
+      },
+      {
+        "id": "b1121d4ca966",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "WS6",
+        "x": 560,
+        "y": 650,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "WS6",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "E6A6.2272.0D9A",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "193f9c73012e",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "WS7",
+        "x": 720,
+        "y": 670,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp"
+            ]
+          },
+          {
+            "softwareId": "sw-email-server",
+            "enabledServices": [
+              "pop3"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "WS7",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "7AD6.54C7.0E6B",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "9c45d30e4354",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "WS8",
+        "x": 880,
+        "y": 640,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp"
+            ]
+          },
+          {
+            "softwareId": "sw-email-server",
+            "enabledServices": [
+              "pop3"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "WS8",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "2639.CE90.6591",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "64e6b2491605",
+        "catalogId": "server",
+        "kind": "server",
+        "name": "\u0421\u0435\u0440\u0432\u0435\u0440 3 (Ethernet)",
+        "x": 900,
+        "y": 480,
+        "notes": "",
+        "software": [
+          {
+            "softwareId": "sw-http-server",
+            "enabledServices": [
+              "http",
+              "ftp",
+              "pop3"
+            ]
+          }
+        ],
+        "server": {
+          "replySize": {
+            "law": "normal",
+            "value": 1,
+            "mean": 2048,
+            "stdDev": 512,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 512,
+            "summary": "Normal(M=2048, \u03C3=512)"
+          },
+          "replyDelay": {
+            "law": "erlang",
+            "value": 1,
+            "mean": 1.5,
+            "stdDev": 0.4,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 1.5,
+            "expectedStdDev": 0.4008918628686366,
+            "summary": "Erlang(M=1.5, \u03C3=0.4)"
+          }
+        },
+        "network": {
+          "hostname": "\u0421\u0435\u0440\u0432\u0435\u04403(Ethernet)",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "5A01.A69A.60C7",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [
+          "currentWorkload",
+          "packetsReceived"
+        ],
+        "childLevel": null
+      }
+    ],
+    "links": [
+      {
+        "id": "d857721376e2",
+        "aId": "e558d5b3fd44",
+        "bId": "6d5092f08bc0",
+        "standardId": "cddi",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 20,
+        "aInterface": "Fa0",
+        "bInterface": "Fddi0",
+        "shownStatistics": []
+      },
+      {
+        "id": "e9d066d7c0d7",
+        "aId": "56f90af9629e",
+        "bId": "6d5092f08bc0",
+        "standardId": "cddi",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 20,
+        "aInterface": "Fa0",
+        "bInterface": "Fddi1",
+        "shownStatistics": []
+      },
+      {
+        "id": "f7bdb40097d5",
+        "aId": "9bb208a5699c",
+        "bId": "6d5092f08bc0",
+        "standardId": "cddi",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 20,
+        "aInterface": "Fa0",
+        "bInterface": "Fddi2",
+        "shownStatistics": []
+      },
+      {
+        "id": "67fc215de4ae",
+        "aId": "80982a11e620",
+        "bId": "6d5092f08bc0",
+        "standardId": "cddi",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 20,
+        "aInterface": "Fa0",
+        "bInterface": "Fddi3",
+        "shownStatistics": []
+      },
+      {
+        "id": "39ef51d0a789",
+        "aId": "6d5092f08bc0",
+        "bId": "563368a8aac3",
+        "standardId": "cddi",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 20,
+        "aInterface": "Fddi4",
+        "bInterface": "Fa0/1",
+        "shownStatistics": []
+      },
+      {
+        "id": "490343811af6",
+        "aId": "563368a8aac3",
+        "bId": "2845b13fc83d",
+        "standardId": "tr-16",
+        "mediaId": "stp",
+        "bandwidthBps": 16000000,
+        "lengthM": 15,
+        "aInterface": "Fa0/2",
+        "bInterface": "Tr0",
+        "shownStatistics": []
+      },
+      {
+        "id": "d3d92265bdfc",
+        "aId": "edf9d6b676a0",
+        "bId": "2845b13fc83d",
+        "standardId": "tr-16",
+        "mediaId": "stp",
+        "bandwidthBps": 16000000,
+        "lengthM": 10,
+        "aInterface": "Fa0",
+        "bInterface": "Tr1",
+        "shownStatistics": []
+      },
+      {
+        "id": "8763905721c9",
+        "aId": "313b630ab50a",
+        "bId": "2845b13fc83d",
+        "standardId": "tr-16",
+        "mediaId": "stp",
+        "bandwidthBps": 16000000,
+        "lengthM": 10,
+        "aInterface": "Fa0",
+        "bInterface": "Tr2",
+        "shownStatistics": []
+      },
+      {
+        "id": "bdf52ccb4d81",
+        "aId": "0e0a01725ee8",
+        "bId": "2845b13fc83d",
+        "standardId": "tr-16",
+        "mediaId": "stp",
+        "bandwidthBps": 16000000,
+        "lengthM": 10,
+        "aInterface": "Fa0",
+        "bInterface": "Tr3",
+        "shownStatistics": []
+      },
+      {
+        "id": "97a6d8097d17",
+        "aId": "6d5092f08bc0",
+        "bId": "dd65ba3b7e4c",
+        "standardId": "cddi",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 20,
+        "aInterface": "Fddi5",
+        "bInterface": "Port0",
+        "shownStatistics": []
+      },
+      {
+        "id": "967ff976e83a",
+        "aId": "dd65ba3b7e4c",
+        "bId": "6d95542c1522",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 15,
+        "aInterface": "Port1",
+        "bInterface": "Fa0/1",
+        "shownStatistics": []
+      },
+      {
+        "id": "b7385bc320a2",
+        "aId": "6d95542c1522",
+        "bId": "b1121d4ca966",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/2",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      },
+      {
+        "id": "08bf85d0fb21",
+        "aId": "6d95542c1522",
+        "bId": "193f9c73012e",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/3",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      },
+      {
+        "id": "f6c80de322b3",
+        "aId": "6d95542c1522",
+        "bId": "9c45d30e4354",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/4",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      },
+      {
+        "id": "426bf76b25d7",
+        "aId": "6d95542c1522",
+        "bId": "64e6b2491605",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/5",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      }
+    ],
+    "plan": {
+      "pixelsPerMeter": 20,
+      "isVisible": true,
+      "wallLossDb": 6,
+      "shapes": []
+    }
+  },
+  "flows": [
+    {
+      "id": "1dab22fdaba8",
+      "sourceId": "e558d5b3fd44",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "b89a8307cd25",
+      "sourceId": "56f90af9629e",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "222cc4d85388",
+      "sourceId": "9bb208a5699c",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "bd365c33e1b5",
+      "sourceId": "edf9d6b676a0",
+      "targetId": "0e0a01725ee8",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "984449c00df1",
+      "sourceId": "313b630ab50a",
+      "targetId": "0e0a01725ee8",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "4002f161ba1c",
+      "sourceId": "b1121d4ca966",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "69fbe198e3c2",
+      "sourceId": "193f9c73012e",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "4f997836f329",
+      "sourceId": "9c45d30e4354",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "216ae0cdf892",
+      "sourceId": "e558d5b3fd44",
+      "targetId": "56f90af9629e",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "dec465382c85",
+      "sourceId": "56f90af9629e",
+      "targetId": "9bb208a5699c",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "1c7e4159ddae",
+      "sourceId": "e558d5b3fd44",
+      "targetId": "9bb208a5699c",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "9929e9ddb22f",
+      "sourceId": "edf9d6b676a0",
+      "targetId": "313b630ab50a",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "79d5cfbca416",
+      "sourceId": "b1121d4ca966",
+      "targetId": "193f9c73012e",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "200b177d81af",
+      "sourceId": "193f9c73012e",
+      "targetId": "9c45d30e4354",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "8d7999a9ca79",
+      "sourceId": "b1121d4ca966",
+      "targetId": "9c45d30e4354",
+      "profile": {
+        "id": "small-office-p2p",
+        "nameRu": "Small office peer-to-peer (\u043C\u0430\u043B\u044B\u0439 \u043E\u0444\u0438\u0441)",
+        "nameEn": "Small office peer-to-peer",
+        "pattern": "peerToPeer",
+        "requiredService": null,
+        "protocol": "NetBIOS/SMB",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 1500,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 1500,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=1500, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "7a519aa85e80",
+      "sourceId": "e558d5b3fd44",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "database",
+        "nameRu": "Database client-server",
+        "nameEn": "Database client-server",
+        "pattern": "clientServer",
+        "requiredService": "db",
+        "protocol": "SQL*Net",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 500,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 500,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=500, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "613bd7ec5cf9",
+      "sourceId": "e558d5b3fd44",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "cadcam",
+        "nameRu": "CAD/CAM client-server",
+        "nameEn": "CAD/CAM client-server",
+        "pattern": "clientServer",
+        "requiredService": "cad",
+        "protocol": "TCP/IP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 2000,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2000,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=2000, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 5,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 5,
+          "expectedStdDev": 5,
+          "summary": "Exp(M=5)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "e85a9acad090",
+      "sourceId": "56f90af9629e",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "database",
+        "nameRu": "Database client-server",
+        "nameEn": "Database client-server",
+        "pattern": "clientServer",
+        "requiredService": "db",
+        "protocol": "SQL*Net",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 500,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 500,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=500, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "f3401b89a571",
+      "sourceId": "56f90af9629e",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "cadcam",
+        "nameRu": "CAD/CAM client-server",
+        "nameEn": "CAD/CAM client-server",
+        "pattern": "clientServer",
+        "requiredService": "cad",
+        "protocol": "TCP/IP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 2000,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2000,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=2000, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 5,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 5,
+          "expectedStdDev": 5,
+          "summary": "Exp(M=5)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "b8937fb8551d",
+      "sourceId": "9bb208a5699c",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "database",
+        "nameRu": "Database client-server",
+        "nameEn": "Database client-server",
+        "pattern": "clientServer",
+        "requiredService": "db",
+        "protocol": "SQL*Net",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 500,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 500,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=500, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "8a3920931a54",
+      "sourceId": "9bb208a5699c",
+      "targetId": "80982a11e620",
+      "profile": {
+        "id": "cadcam",
+        "nameRu": "CAD/CAM client-server",
+        "nameEn": "CAD/CAM client-server",
+        "pattern": "clientServer",
+        "requiredService": "cad",
+        "protocol": "TCP/IP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 2000,
+          "stdDev": 500,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2000,
+          "expectedStdDev": 500,
+          "summary": "Normal(M=2000, \u03C3=500)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 5,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 5,
+          "expectedStdDev": 5,
+          "summary": "Exp(M=5)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "bca6830173fc",
+      "sourceId": "edf9d6b676a0",
+      "targetId": "0e0a01725ee8",
+      "profile": {
+        "id": "file-cs",
+        "nameRu": "File client-server (\u0444\u0430\u0439\u043B-\u0441\u0435\u0440\u0432\u0435\u0440)",
+        "nameEn": "File client-server",
+        "pattern": "clientServer",
+        "requiredService": "file",
+        "protocol": "NFS/SMB",
+        "transactionSize": {
+          "law": "constant",
+          "value": 512,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 512,
+          "expectedStdDev": 0,
+          "summary": "Const(512)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "05c39257c3c2",
+      "sourceId": "edf9d6b676a0",
+      "targetId": "0e0a01725ee8",
+      "profile": {
+        "id": "database",
+        "nameRu": "Database client-server",
+        "nameEn": "Database client-server",
+        "pattern": "clientServer",
+        "requiredService": "db",
+        "protocol": "SQL*Net",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 500,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 500,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=500, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "918f42357582",
+      "sourceId": "313b630ab50a",
+      "targetId": "0e0a01725ee8",
+      "profile": {
+        "id": "file-cs",
+        "nameRu": "File client-server (\u0444\u0430\u0439\u043B-\u0441\u0435\u0440\u0432\u0435\u0440)",
+        "nameEn": "File client-server",
+        "pattern": "clientServer",
+        "requiredService": "file",
+        "protocol": "NFS/SMB",
+        "transactionSize": {
+          "law": "constant",
+          "value": 512,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 512,
+          "expectedStdDev": 0,
+          "summary": "Const(512)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "088b3e978e17",
+      "sourceId": "313b630ab50a",
+      "targetId": "0e0a01725ee8",
+      "profile": {
+        "id": "database",
+        "nameRu": "Database client-server",
+        "nameEn": "Database client-server",
+        "pattern": "clientServer",
+        "requiredService": "db",
+        "protocol": "SQL*Net",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 500,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 500,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=500, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 2,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 2,
+          "expectedStdDev": 2,
+          "summary": "Exp(M=2)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "fdf0236262b3",
+      "sourceId": "e558d5b3fd44",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "http",
+        "nameRu": "HTTP (\u0432\u0435\u0431)",
+        "nameEn": "HTTP",
+        "pattern": "clientServer",
+        "requiredService": "http",
+        "protocol": "HTTP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 400,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 400,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=400, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "a0b7ba2ec7ce",
+      "sourceId": "e558d5b3fd44",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "ftp",
+        "nameRu": "File Transfer (FTP)",
+        "nameEn": "File Transfer (FTP)",
+        "pattern": "clientServer",
+        "requiredService": "ftp",
+        "protocol": "FTP",
+        "transactionSize": {
+          "law": "constant",
+          "value": 200,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 200,
+          "expectedStdDev": 0,
+          "summary": "Const(200)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 10,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 10,
+          "expectedStdDev": 10,
+          "summary": "Exp(M=10)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "6e849d33032c",
+      "sourceId": "56f90af9629e",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "http",
+        "nameRu": "HTTP (\u0432\u0435\u0431)",
+        "nameEn": "HTTP",
+        "pattern": "clientServer",
+        "requiredService": "http",
+        "protocol": "HTTP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 400,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 400,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=400, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "1d7226528e4e",
+      "sourceId": "56f90af9629e",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "ftp",
+        "nameRu": "File Transfer (FTP)",
+        "nameEn": "File Transfer (FTP)",
+        "pattern": "clientServer",
+        "requiredService": "ftp",
+        "protocol": "FTP",
+        "transactionSize": {
+          "law": "constant",
+          "value": 200,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 200,
+          "expectedStdDev": 0,
+          "summary": "Const(200)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 10,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 10,
+          "expectedStdDev": 10,
+          "summary": "Exp(M=10)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "f04f8d086ccc",
+      "sourceId": "9bb208a5699c",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "http",
+        "nameRu": "HTTP (\u0432\u0435\u0431)",
+        "nameEn": "HTTP",
+        "pattern": "clientServer",
+        "requiredService": "http",
+        "protocol": "HTTP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 400,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 400,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=400, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "b8bb5eed06c1",
+      "sourceId": "9bb208a5699c",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "ftp",
+        "nameRu": "File Transfer (FTP)",
+        "nameEn": "File Transfer (FTP)",
+        "pattern": "clientServer",
+        "requiredService": "ftp",
+        "protocol": "FTP",
+        "transactionSize": {
+          "law": "constant",
+          "value": 200,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 200,
+          "expectedStdDev": 0,
+          "summary": "Const(200)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 10,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 10,
+          "expectedStdDev": 10,
+          "summary": "Exp(M=10)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "579a8d0655f1",
+      "sourceId": "edf9d6b676a0",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "http",
+        "nameRu": "HTTP (\u0432\u0435\u0431)",
+        "nameEn": "HTTP",
+        "pattern": "clientServer",
+        "requiredService": "http",
+        "protocol": "HTTP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 400,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 400,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=400, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "0f6d33aa5bcb",
+      "sourceId": "edf9d6b676a0",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "ftp",
+        "nameRu": "File Transfer (FTP)",
+        "nameEn": "File Transfer (FTP)",
+        "pattern": "clientServer",
+        "requiredService": "ftp",
+        "protocol": "FTP",
+        "transactionSize": {
+          "law": "constant",
+          "value": 200,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 200,
+          "expectedStdDev": 0,
+          "summary": "Const(200)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 10,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 10,
+          "expectedStdDev": 10,
+          "summary": "Exp(M=10)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "da9bffaa547a",
+      "sourceId": "313b630ab50a",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "http",
+        "nameRu": "HTTP (\u0432\u0435\u0431)",
+        "nameEn": "HTTP",
+        "pattern": "clientServer",
+        "requiredService": "http",
+        "protocol": "HTTP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 400,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 400,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=400, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "4ada0c818ea0",
+      "sourceId": "313b630ab50a",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "ftp",
+        "nameRu": "File Transfer (FTP)",
+        "nameEn": "File Transfer (FTP)",
+        "pattern": "clientServer",
+        "requiredService": "ftp",
+        "protocol": "FTP",
+        "transactionSize": {
+          "law": "constant",
+          "value": 200,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 200,
+          "expectedStdDev": 0,
+          "summary": "Const(200)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 10,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 10,
+          "expectedStdDev": 10,
+          "summary": "Exp(M=10)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "a09136916741",
+      "sourceId": "b1121d4ca966",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "http",
+        "nameRu": "HTTP (\u0432\u0435\u0431)",
+        "nameEn": "HTTP",
+        "pattern": "clientServer",
+        "requiredService": "http",
+        "protocol": "HTTP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 400,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 400,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=400, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "0e06a4300f92",
+      "sourceId": "b1121d4ca966",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "ftp",
+        "nameRu": "File Transfer (FTP)",
+        "nameEn": "File Transfer (FTP)",
+        "pattern": "clientServer",
+        "requiredService": "ftp",
+        "protocol": "FTP",
+        "transactionSize": {
+          "law": "constant",
+          "value": 200,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 200,
+          "expectedStdDev": 0,
+          "summary": "Const(200)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 10,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 10,
+          "expectedStdDev": 10,
+          "summary": "Exp(M=10)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "7f7d9dcf4d4a",
+      "sourceId": "193f9c73012e",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "http",
+        "nameRu": "HTTP (\u0432\u0435\u0431)",
+        "nameEn": "HTTP",
+        "pattern": "clientServer",
+        "requiredService": "http",
+        "protocol": "HTTP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 400,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 400,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=400, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "4c74f7a9acb9",
+      "sourceId": "193f9c73012e",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "ftp",
+        "nameRu": "File Transfer (FTP)",
+        "nameEn": "File Transfer (FTP)",
+        "pattern": "clientServer",
+        "requiredService": "ftp",
+        "protocol": "FTP",
+        "transactionSize": {
+          "law": "constant",
+          "value": 200,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 200,
+          "expectedStdDev": 0,
+          "summary": "Const(200)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 10,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 10,
+          "expectedStdDev": 10,
+          "summary": "Exp(M=10)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "007845bdabae",
+      "sourceId": "9c45d30e4354",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "http",
+        "nameRu": "HTTP (\u0432\u0435\u0431)",
+        "nameEn": "HTTP",
+        "pattern": "clientServer",
+        "requiredService": "http",
+        "protocol": "HTTP",
+        "transactionSize": {
+          "law": "normal",
+          "value": 1,
+          "mean": 400,
+          "stdDev": 100,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 400,
+          "expectedStdDev": 100,
+          "summary": "Normal(M=400, \u03C3=100)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 3,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 3,
+          "expectedStdDev": 3,
+          "summary": "Exp(M=3)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "d131924d3d6a",
+      "sourceId": "9c45d30e4354",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "ftp",
+        "nameRu": "File Transfer (FTP)",
+        "nameEn": "File Transfer (FTP)",
+        "pattern": "clientServer",
+        "requiredService": "ftp",
+        "protocol": "FTP",
+        "transactionSize": {
+          "law": "constant",
+          "value": 200,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 200,
+          "expectedStdDev": 0,
+          "summary": "Const(200)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 10,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 10,
+          "expectedStdDev": 10,
+          "summary": "Exp(M=10)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "3b7d999e323f",
+      "sourceId": "9bb208a5699c",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "email-pop",
+        "nameRu": "E-mail (POP)",
+        "nameEn": "E-mail (POP)",
+        "pattern": "clientServer",
+        "requiredService": "pop3",
+        "protocol": "POP3",
+        "transactionSize": {
+          "law": "constant",
+          "value": 300,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 300,
+          "expectedStdDev": 0,
+          "summary": "Const(300)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 30,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 30,
+          "expectedStdDev": 30,
+          "summary": "Exp(M=30)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "598bab094909",
+      "sourceId": "313b630ab50a",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "email-pop",
+        "nameRu": "E-mail (POP)",
+        "nameEn": "E-mail (POP)",
+        "pattern": "clientServer",
+        "requiredService": "pop3",
+        "protocol": "POP3",
+        "transactionSize": {
+          "law": "constant",
+          "value": 300,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 300,
+          "expectedStdDev": 0,
+          "summary": "Const(300)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 30,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 30,
+          "expectedStdDev": 30,
+          "summary": "Exp(M=30)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "66451e5cfb7b",
+      "sourceId": "193f9c73012e",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "email-pop",
+        "nameRu": "E-mail (POP)",
+        "nameEn": "E-mail (POP)",
+        "pattern": "clientServer",
+        "requiredService": "pop3",
+        "protocol": "POP3",
+        "transactionSize": {
+          "law": "constant",
+          "value": 300,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 300,
+          "expectedStdDev": 0,
+          "summary": "Const(300)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 30,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 30,
+          "expectedStdDev": 30,
+          "summary": "Exp(M=30)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    },
+    {
+      "id": "7d118f68549e",
+      "sourceId": "9c45d30e4354",
+      "targetId": "64e6b2491605",
+      "profile": {
+        "id": "email-pop",
+        "nameRu": "E-mail (POP)",
+        "nameEn": "E-mail (POP)",
+        "pattern": "clientServer",
+        "requiredService": "pop3",
+        "protocol": "POP3",
+        "transactionSize": {
+          "law": "constant",
+          "value": 300,
+          "mean": 1,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 300,
+          "expectedStdDev": 0,
+          "summary": "Const(300)"
+        },
+        "timeBetween": {
+          "law": "exponential",
+          "value": 1,
+          "mean": 30,
+          "stdDev": 0,
+          "min": 0,
+          "max": 1,
+          "expectedValue": 30,
+          "expectedStdDev": 30,
+          "summary": "Exp(M=30)"
+        }
+      },
+      "showAnimation": true,
+      "isActive": true
+    }
+  ],
+  "simulation": {
+    "seed": 12345,
+    "statisticsWindowSec": 5,
+    "maxQueuePackets": 200,
+    "overloadThreshold": 0.8
+  },
+  "calculations": []
+}

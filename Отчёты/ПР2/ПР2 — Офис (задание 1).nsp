@@ -1,0 +1,731 @@
+{
+  "formatVersion": 1,
+  "name": "\u041E\u0444\u0438\u0441",
+  "author": "",
+  "description": "\u041F\u04202, \u0441\u0430\u043C\u043E\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u044F 1\u20132: 5 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u043E\u0432, 2 \u043A\u043E\u043C\u043C\u0443\u0442\u0430\u0442\u043E\u0440\u0430, \u043C\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043E\u0440, \u043F\u043E\u0447\u0442\u043E\u0432\u044B\u0439 \u0441\u0435\u0440\u0432\u0435\u0440.",
+  "root": {
+    "id": "8e347e253f3e",
+    "name": "Network",
+    "background": "plain",
+    "devices": [
+      {
+        "id": "2f8446a2b808",
+        "catalogId": "router",
+        "kind": "router",
+        "name": "\u041C\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043E\u0440",
+        "x": 470,
+        "y": 90,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041C\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043E\u0440",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0/1",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "12CF.468F.158F",
+              "isUp": false,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/2",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "D2AF.79C8.559C",
+              "isUp": false,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "e51f18214186",
+        "catalogId": "switch-eth",
+        "kind": "switch",
+        "name": "\u041A\u043E\u043C\u043C\u0443\u0442\u0430\u0442\u043E\u0440 \u0410",
+        "x": 260,
+        "y": 230,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041A\u043E\u043C\u043C\u0443\u0442\u0430\u0442\u043E\u0440\u0410",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0/1",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "E60C.3EB1.B50F",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/2",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "721A.1E4E.604C",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/3",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "8EB9.074D.B2CB",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/4",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "A2B6.B240.C3B6",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "c8bc3905b81a",
+        "catalogId": "switch-eth",
+        "kind": "switch",
+        "name": "\u041A\u043E\u043C\u043C\u0443\u0442\u0430\u0442\u043E\u0440 \u0411",
+        "x": 680,
+        "y": 230,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041A\u043E\u043C\u043C\u0443\u0442\u0430\u0442\u043E\u0440\u0411",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0/1",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "06B5.F877.4186",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/2",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "4A9B.DD91.846F",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            },
+            {
+              "name": "Fa0/3",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "CED0.1704.C2FF",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "a2aef1795fe6",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440 1",
+        "x": 120,
+        "y": 400,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u04401",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "FEFA.152C.96F1",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "7e173814b2ea",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440 2",
+        "x": 260,
+        "y": 400,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u04402",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "BA35.1BE3.9B2C",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "8a48ed3a0e00",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440 3",
+        "x": 400,
+        "y": 400,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u04403",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "526B.090D.E1A1",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "176ceac8efa3",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440 4",
+        "x": 610,
+        "y": 400,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u04404",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "4249.B0BB.2F23",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      },
+      {
+        "id": "8ba4ab901ec4",
+        "catalogId": "pc",
+        "kind": "workstation",
+        "name": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440 5",
+        "x": 750,
+        "y": 400,
+        "notes": "",
+        "software": [],
+        "server": {
+          "replySize": {
+            "law": "constant",
+            "value": 2048,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 2048,
+            "expectedStdDev": 0,
+            "summary": "Const(2048)"
+          },
+          "replyDelay": {
+            "law": "constant",
+            "value": 0.01,
+            "mean": 1,
+            "stdDev": 0,
+            "min": 0,
+            "max": 1,
+            "expectedValue": 0.01,
+            "expectedStdDev": 0,
+            "summary": "Const(0.01)"
+          }
+        },
+        "network": {
+          "hostname": "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u04405",
+          "defaultGateway": "",
+          "interfaces": [
+            {
+              "name": "Fa0",
+              "ipAddress": "",
+              "subnetMask": "",
+              "macAddress": "1265.B856.8372",
+              "isUp": true,
+              "vlan": 1,
+              "description": "",
+              "mode": "access",
+              "allowedVlans": "all"
+            }
+          ],
+          "staticRoutes": [],
+          "useDhcp": false,
+          "dnsServer": "",
+          "dhcpServerEnabled": false,
+          "dhcpPools": [],
+          "dhcpExcluded": [],
+          "dnsServerEnabled": false,
+          "dnsRecords": [],
+          "vlans": []
+        },
+        "radio": {
+          "powerDbm": 20,
+          "antennaGainDbi": 5,
+          "cableLossDb": 1,
+          "channel": 6,
+          "rateMbps": 54
+        },
+        "shownStatistics": [],
+        "childLevel": null
+      }
+    ],
+    "links": [
+      {
+        "id": "5e6aa4fdef10",
+        "aId": "e51f18214186",
+        "bId": "a2aef1795fe6",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/1",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      },
+      {
+        "id": "2f0eb3556340",
+        "aId": "e51f18214186",
+        "bId": "7e173814b2ea",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/2",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      },
+      {
+        "id": "2e3efc7b9ec6",
+        "aId": "e51f18214186",
+        "bId": "8a48ed3a0e00",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/3",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      },
+      {
+        "id": "ff255420ccdd",
+        "aId": "c8bc3905b81a",
+        "bId": "176ceac8efa3",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/1",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      },
+      {
+        "id": "ca548e2c9e66",
+        "aId": "c8bc3905b81a",
+        "bId": "8ba4ab901ec4",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 10,
+        "aInterface": "Fa0/2",
+        "bInterface": "Fa0",
+        "shownStatistics": []
+      },
+      {
+        "id": "4c3b98217e1b",
+        "aId": "e51f18214186",
+        "bId": "2f8446a2b808",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 20,
+        "aInterface": "Fa0/4",
+        "bInterface": "Fa0/1",
+        "shownStatistics": []
+      },
+      {
+        "id": "2e5c0d1cbe2f",
+        "aId": "c8bc3905b81a",
+        "bId": "2f8446a2b808",
+        "standardId": "100base-tx",
+        "mediaId": "utp5",
+        "bandwidthBps": 100000000,
+        "lengthM": 20,
+        "aInterface": "Fa0/3",
+        "bInterface": "Fa0/2",
+        "shownStatistics": []
+      }
+    ],
+    "plan": {
+      "pixelsPerMeter": 20,
+      "isVisible": true,
+      "wallLossDb": 6,
+      "shapes": []
+    }
+  },
+  "flows": [],
+  "simulation": {
+    "seed": 12345,
+    "statisticsWindowSec": 5,
+    "maxQueuePackets": 200,
+    "overloadThreshold": 0.8
+  },
+  "calculations": []
+}

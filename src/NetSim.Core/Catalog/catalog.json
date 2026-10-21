@@ -1,0 +1,322 @@
+// Каталог оборудования NetSim. Формат: JSON с комментариями.
+// Чтобы расширить базу без перекомпиляции, скопируйте этот файл рядом с NetSim.App.exe (catalog.json) и отредактируйте.
+{
+  "mediaTypes": [
+    { "id": "utp3", "nameRu": "Неэкранированная витая пара, кат. 3", "nameEn": "UTP Cat 3", "color": "#3A7BD5" },
+    { "id": "utp5", "nameRu": "Неэкранированная витая пара, кат. 5", "nameEn": "UTP Cat 5", "color": "#1E5BB8" },
+    { "id": "utp6", "nameRu": "Витая пара, кат. 6", "nameEn": "UTP Cat 6", "color": "#0B3D91" },
+    { "id": "stp", "nameRu": "Экранированная витая пара (STP)", "nameEn": "Shielded twisted pair (STP)", "color": "#7B3FC4" },
+    { "id": "coax-thin", "nameRu": "Тонкий коаксиальный кабель", "nameEn": "Thin coaxial cable", "color": "#2E9E5B" },
+    { "id": "coax-thick", "nameRu": "Толстый коаксиальный кабель", "nameEn": "Thick coaxial cable", "color": "#156B37" },
+    { "id": "fiber-mm", "nameRu": "Многомодовое оптоволокно", "nameEn": "Multimode fiber", "color": "#E07A10" },
+    { "id": "fiber-sm", "nameRu": "Одномодовое оптоволокно", "nameEn": "Single-mode fiber", "color": "#C04A00" },
+    { "id": "radio", "nameRu": "Радиоканал", "nameEn": "Radio", "color": "#8C8C8C", "dashed": true },
+    { "id": "phone", "nameRu": "Телефонная линия", "nameEn": "Telephone line", "color": "#9B6B2F" },
+    { "id": "serial", "nameRu": "Последовательный кабель", "nameEn": "Serial cable", "color": "#C0283C" },
+    { "id": "satellite", "nameRu": "Спутниковый канал", "nameEn": "Satellite link", "color": "#5A5A9A", "dashed": true },
+    { "id": "virtual", "nameRu": "Логическое соединение", "nameEn": "Logical connection", "color": "#A0A0A0", "dashed": true }
+  ],
+
+  "standards": [
+    { "id": "10base-5", "nameRu": "Ethernet 10Base-5 (толстый коаксиал)", "nameEn": "Ethernet 10Base-5", "family": "ethernet", "bandwidthBps": 10e6, "media": ["coax-thick"], "maxLengthM": 500, "propagationNsPerM": 4.33 },
+    { "id": "10base-2", "nameRu": "Ethernet 10Base-2 (тонкий коаксиал)", "nameEn": "Ethernet 10Base-2", "family": "ethernet", "bandwidthBps": 10e6, "media": ["coax-thin"], "maxLengthM": 185, "propagationNsPerM": 5.13 },
+    { "id": "10base-t", "nameRu": "Ethernet 10Base-T", "nameEn": "Ethernet 10Base-T", "family": "ethernet", "bandwidthBps": 10e6, "media": ["utp3", "utp5"], "maxLengthM": 100, "propagationNsPerM": 5.65 },
+    { "id": "10base-fl", "nameRu": "Ethernet 10Base-FL", "nameEn": "Ethernet 10Base-FL", "family": "ethernet", "bandwidthBps": 10e6, "media": ["fiber-mm"], "maxLengthM": 2000 },
+    { "id": "10base-fb", "nameRu": "Ethernet 10Base-FB (магистраль)", "nameEn": "Ethernet 10Base-FB", "family": "ethernet", "bandwidthBps": 10e6, "media": ["fiber-mm"], "maxLengthM": 2000 },
+    { "id": "100base-tx", "nameRu": "Fast Ethernet 100Base-TX", "nameEn": "Fast Ethernet 100Base-TX", "family": "ethernet", "bandwidthBps": 100e6, "media": ["utp5", "stp"], "maxLengthM": 100, "propagationNsPerM": 5.56 },
+    { "id": "100base-t4", "nameRu": "Fast Ethernet 100Base-T4", "nameEn": "Fast Ethernet 100Base-T4", "family": "ethernet", "bandwidthBps": 100e6, "media": ["utp3", "utp5"], "maxLengthM": 100, "propagationNsPerM": 5.7 },
+    { "id": "100base-fx", "nameRu": "Fast Ethernet 100Base-FX", "nameEn": "Fast Ethernet 100Base-FX", "family": "ethernet", "bandwidthBps": 100e6, "media": ["fiber-mm"], "maxLengthM": 2000 },
+    { "id": "1000base-t", "nameRu": "Gigabit Ethernet 1000Base-T", "nameEn": "Gigabit Ethernet 1000Base-T", "family": "ethernet", "bandwidthBps": 1e9, "media": ["utp5", "utp6"], "maxLengthM": 100 },
+    { "id": "1000base-sx", "nameRu": "Gigabit Ethernet 1000Base-SX", "nameEn": "Gigabit Ethernet 1000Base-SX", "family": "ethernet", "bandwidthBps": 1e9, "media": ["fiber-mm"], "maxLengthM": 550 },
+    { "id": "1000base-lx", "nameRu": "Gigabit Ethernet 1000Base-LX", "nameEn": "Gigabit Ethernet 1000Base-LX", "family": "ethernet", "bandwidthBps": 1e9, "media": ["fiber-sm"], "maxLengthM": 5000 },
+    { "id": "10gbase-sr", "nameRu": "10 Gigabit Ethernet 10GBase-SR", "nameEn": "10GBase-SR", "family": "ethernet", "bandwidthBps": 10e9, "media": ["fiber-mm"], "maxLengthM": 300 },
+
+    { "id": "tr-4", "nameRu": "Token Ring 4 Мбит/с", "nameEn": "Token Ring 4 Mbps", "family": "tokenRing", "bandwidthBps": 4e6, "media": ["stp", "utp3", "utp5"], "maxLengthM": 300, "mtu": 4464 },
+    { "id": "tr-16", "nameRu": "Token Ring 16 Мбит/с", "nameEn": "Token Ring 16 Mbps", "family": "tokenRing", "bandwidthBps": 16e6, "media": ["stp", "utp5"], "maxLengthM": 100, "mtu": 4464 },
+    { "id": "fddi", "nameRu": "FDDI (оптоволокно)", "nameEn": "FDDI", "family": "fddi", "bandwidthBps": 100e6, "media": ["fiber-mm", "fiber-sm"], "maxLengthM": 2000, "mtu": 4352 },
+    { "id": "cddi", "nameRu": "CDDI (FDDI по витой паре)", "nameEn": "CDDI (FDDI over copper)", "family": "fddi", "bandwidthBps": 100e6, "media": ["utp5", "stp"], "maxLengthM": 100, "mtu": 4352 },
+
+    { "id": "802.11a", "nameRu": "Wi-Fi 802.11a (5 ГГц, 54 Мбит/с)", "nameEn": "Wi-Fi 802.11a", "family": "wireless", "bandwidthBps": 54e6, "media": ["radio"], "maxLengthM": 100, "propagationNsPerM": 3.34 },
+    { "id": "802.11b", "nameRu": "Wi-Fi 802.11b (2,4 ГГц, 11 Мбит/с)", "nameEn": "Wi-Fi 802.11b", "family": "wireless", "bandwidthBps": 11e6, "media": ["radio"], "maxLengthM": 300, "propagationNsPerM": 3.34 },
+    { "id": "802.11g", "nameRu": "Wi-Fi 802.11g (2,4 ГГц, 54 Мбит/с)", "nameEn": "Wi-Fi 802.11g", "family": "wireless", "bandwidthBps": 54e6, "media": ["radio"], "maxLengthM": 300, "propagationNsPerM": 3.34 },
+    { "id": "802.11n", "nameRu": "Wi-Fi 802.11n (2,4/5 ГГц, до 450 Мбит/с)", "nameEn": "Wi-Fi 802.11n", "family": "wireless", "bandwidthBps": 450e6, "media": ["radio"], "maxLengthM": 300, "propagationNsPerM": 3.34 },
+    { "id": "802.11ac", "nameRu": "Wi-Fi 802.11ac (5 ГГц)", "nameEn": "Wi-Fi 802.11ac", "family": "wireless", "bandwidthBps": 1300e6, "media": ["radio"], "maxLengthM": 100, "propagationNsPerM": 3.34 },
+
+    { "id": "modem-56k", "nameRu": "Модем V.90 (56 кбит/с)", "nameEn": "Dial-up modem V.90 (56 kbps)", "family": "wan", "bandwidthBps": 56e3, "media": ["phone"], "maxLengthM": 10000 },
+    { "id": "modem-500k", "nameRu": "Аналоговый модем 500 кбит/с", "nameEn": "Analog modem 500 kbps", "family": "wan", "bandwidthBps": 500e3, "media": ["phone"], "maxLengthM": 10000 },
+    { "id": "isdn-bri", "nameRu": "ISDN BRI (128 кбит/с)", "nameEn": "ISDN BRI (128 kbps)", "family": "wan", "bandwidthBps": 128e3, "media": ["phone", "utp3"], "maxLengthM": 5000 },
+    { "id": "isdn-pri", "nameRu": "ISDN PRI (2 Мбит/с)", "nameEn": "ISDN PRI (2 Mbps)", "family": "wan", "bandwidthBps": 2.048e6, "media": ["phone", "utp3"], "maxLengthM": 5000 },
+    { "id": "adsl", "nameRu": "ADSL (8 Мбит/с)", "nameEn": "ADSL (8 Mbps)", "family": "wan", "bandwidthBps": 8e6, "media": ["phone"], "maxLengthM": 5000 },
+    { "id": "vdsl2", "nameRu": "VDSL2 (100 Мбит/с)", "nameEn": "VDSL2 (100 Mbps)", "family": "wan", "bandwidthBps": 100e6, "media": ["phone"], "maxLengthM": 500 },
+    { "id": "t1", "nameRu": "T1 (1,544 Мбит/с)", "nameEn": "T1 (1.544 Mbps)", "family": "wan", "bandwidthBps": 1.544e6, "media": ["utp3", "serial"], "maxLengthM": 2000 },
+    { "id": "e1", "nameRu": "E1 (2,048 Мбит/с)", "nameEn": "E1 (2.048 Mbps)", "family": "wan", "bandwidthBps": 2.048e6, "media": ["utp3", "serial", "coax-thin"], "maxLengthM": 2000 },
+    { "id": "serial-v35", "nameRu": "Последовательный канал V.35 (2 Мбит/с)", "nameEn": "Serial V.35 (2 Mbps)", "family": "wan", "bandwidthBps": 2.048e6, "media": ["serial"], "maxLengthM": 15 },
+    { "id": "frame-relay", "nameRu": "Frame Relay (2 Мбит/с)", "nameEn": "Frame Relay (2 Mbps)", "family": "wan", "bandwidthBps": 2.048e6, "media": ["serial", "utp3"], "maxLengthM": 10000 },
+    { "id": "x25", "nameRu": "X.25 (64 кбит/с)", "nameEn": "X.25 (64 kbps)", "family": "wan", "bandwidthBps": 64e3, "media": ["serial", "phone"], "maxLengthM": 10000 },
+    { "id": "satellite", "nameRu": "Спутниковый канал (2 Мбит/с)", "nameEn": "Satellite link (2 Mbps)", "family": "wan", "bandwidthBps": 2e6, "media": ["satellite"], "maxLengthM": 0 },
+    { "id": "atm-155", "nameRu": "ATM OC-3 (155 Мбит/с)", "nameEn": "ATM OC-3 (155 Mbps)", "family": "atm", "bandwidthBps": 155e6, "media": ["fiber-mm", "fiber-sm", "utp5"], "maxLengthM": 2000, "mtu": 9180 },
+    { "id": "stm-1", "nameRu": "SDH STM-1 (155 Мбит/с)", "nameEn": "SDH STM-1 (155 Mbps)", "family": "atm", "bandwidthBps": 155.52e6, "media": ["fiber-sm"], "maxLengthM": 40000 }
+  ],
+
+  "services": [
+    { "id": "db", "nameRu": "Database client-server (база данных)", "nameEn": "Database client-server" },
+    { "id": "cad", "nameRu": "CAD/CAM client-server", "nameEn": "CAD/CAM client-server" },
+    { "id": "file", "nameRu": "File client-server (файл-сервер)", "nameEn": "File client-server" },
+    { "id": "http", "nameRu": "HTTP", "nameEn": "HTTP" },
+    { "id": "ftp", "nameRu": "FTP", "nameEn": "FTP" },
+    { "id": "pop3", "nameRu": "POP3", "nameEn": "POP3" },
+    { "id": "smtp", "nameRu": "SMTP", "nameEn": "SMTP" },
+    { "id": "print", "nameRu": "Печать", "nameEn": "Printing" },
+    { "id": "video", "nameRu": "Потоковое видео", "nameEn": "Video streaming" },
+    { "id": "voip", "nameRu": "IP-телефония", "nameEn": "Voice over IP" },
+    { "id": "billing", "nameRu": "Биллинг", "nameEn": "Billing" }
+  ],
+
+  "software": [
+    { "id": "sw-small-office-db", "nameRu": "Small office database server", "nameEn": "Small office database server", "services": ["db", "cad"], "defaultServices": ["db"],
+      "descriptionRu": "СУБД малого офиса: клиенты базы данных и CAD/CAM-приложений.", "descriptionEn": "Small office DBMS for database and CAD/CAM clients." },
+    { "id": "sw-sql-server", "nameRu": "SQL server", "nameEn": "SQL server", "services": ["db"], "defaultServices": ["db"] },
+    { "id": "sw-file-server", "nameRu": "File server", "nameEn": "File server", "services": ["file", "ftp"], "defaultServices": ["file"] },
+    { "id": "sw-ftp-server", "nameRu": "FTP server", "nameEn": "FTP server", "services": ["ftp"], "defaultServices": ["ftp"] },
+    { "id": "sw-http-server", "nameRu": "HTTP server", "nameEn": "HTTP server", "services": ["http", "ftp", "pop3", "smtp"], "defaultServices": ["http"] },
+    { "id": "sw-email-server", "nameRu": "E-mail server", "nameEn": "E-mail server", "services": ["pop3", "smtp"], "defaultServices": ["pop3", "smtp"] },
+    { "id": "sw-print-server", "nameRu": "Print server", "nameEn": "Print server", "services": ["print"], "defaultServices": ["print"] },
+    { "id": "sw-video-server", "nameRu": "Video server", "nameEn": "Video server", "services": ["video"], "defaultServices": ["video"] },
+    { "id": "sw-billing", "nameRu": "Billing server", "nameEn": "Billing server", "services": ["billing", "http"], "defaultServices": ["billing"] },
+    { "id": "sw-intranet", "nameRu": "Intranet server", "nameEn": "Intranet server", "services": ["http", "ftp", "smtp", "pop3"], "defaultServices": ["http"] },
+    { "id": "sw-nos-windows", "nameRu": "Windows Server", "nameEn": "Windows Server", "services": ["file", "print", "http"], "defaultServices": [] },
+    { "id": "sw-nos-linux", "nameRu": "Linux", "nameEn": "Linux", "services": ["file", "http", "ftp", "smtp", "pop3"], "defaultServices": [] },
+    { "id": "sw-nos-netware", "nameRu": "Novell NetWare", "nameEn": "Novell NetWare", "services": ["file", "print"], "defaultServices": [] }
+  ],
+
+  "profiles": [
+    { "id": "small-office-p2p", "nameRu": "Small office peer-to-peer (малый офис)", "nameEn": "Small office peer-to-peer", "pattern": "peerToPeer", "protocol": "NetBIOS/SMB",
+      "transactionSize": { "law": "normal", "mean": 1500, "stdDev": 500 }, "timeBetween": { "law": "exponential", "mean": 2 } },
+    { "id": "lan-p2p", "nameRu": "LAN peer-to-peer", "nameEn": "LAN peer-to-peer", "pattern": "peerToPeer", "protocol": "TCP/IP",
+      "transactionSize": { "law": "exponential", "mean": 4000 }, "timeBetween": { "law": "exponential", "mean": 1 } },
+    { "id": "interlan", "nameRu": "InterLAN traffic (межсетевой)", "nameEn": "InterLAN traffic", "pattern": "peerToPeer", "protocol": "TCP/IP",
+      "transactionSize": { "law": "normal", "mean": 8000, "stdDev": 2000 }, "timeBetween": { "law": "exponential", "mean": 0.5 } },
+    { "id": "database", "nameRu": "Database client-server", "nameEn": "Database client-server", "pattern": "clientServer", "requiredService": "db", "protocol": "SQL*Net",
+      "transactionSize": { "law": "normal", "mean": 500, "stdDev": 100 }, "timeBetween": { "law": "exponential", "mean": 2 } },
+    { "id": "cadcam", "nameRu": "CAD/CAM client-server", "nameEn": "CAD/CAM client-server", "pattern": "clientServer", "requiredService": "cad", "protocol": "TCP/IP",
+      "transactionSize": { "law": "normal", "mean": 2000, "stdDev": 500 }, "timeBetween": { "law": "exponential", "mean": 5 } },
+    { "id": "file-cs", "nameRu": "File client-server (файл-сервер)", "nameEn": "File client-server", "pattern": "clientServer", "requiredService": "file", "protocol": "NFS/SMB",
+      "transactionSize": { "law": "constant", "value": 512 }, "timeBetween": { "law": "exponential", "mean": 3 } },
+    { "id": "http", "nameRu": "HTTP (веб)", "nameEn": "HTTP", "pattern": "clientServer", "requiredService": "http", "protocol": "HTTP",
+      "transactionSize": { "law": "normal", "mean": 400, "stdDev": 100 }, "timeBetween": { "law": "exponential", "mean": 3 } },
+    { "id": "ftp", "nameRu": "File Transfer (FTP)", "nameEn": "File Transfer (FTP)", "pattern": "clientServer", "requiredService": "ftp", "protocol": "FTP",
+      "transactionSize": { "law": "constant", "value": 200 }, "timeBetween": { "law": "exponential", "mean": 10 } },
+    { "id": "email-pop", "nameRu": "E-mail (POP)", "nameEn": "E-mail (POP)", "pattern": "clientServer", "requiredService": "pop3", "protocol": "POP3",
+      "transactionSize": { "law": "constant", "value": 300 }, "timeBetween": { "law": "exponential", "mean": 30 } },
+    { "id": "email-smtp", "nameRu": "E-mail (SMTP) — отправка почты", "nameEn": "E-mail (SMTP)", "pattern": "clientServer", "requiredService": "smtp", "protocol": "SMTP",
+      "transactionSize": { "law": "normal", "mean": 5000, "stdDev": 2000 }, "timeBetween": { "law": "exponential", "mean": 60 } },
+    { "id": "print", "nameRu": "Печать (задание на принтер)", "nameEn": "Print job", "pattern": "peerToPeer", "protocol": "LPD/IPP",
+      "transactionSize": { "law": "normal", "mean": 200000, "stdDev": 50000 }, "timeBetween": { "law": "exponential", "mean": 600 } },
+    { "id": "video", "nameRu": "Видеопоток", "nameEn": "Video stream", "pattern": "peerToPeer", "protocol": "RTP",
+      "transactionSize": { "law": "constant", "value": 1316 }, "timeBetween": { "law": "constant", "value": 0.004 } },
+    { "id": "voip", "nameRu": "IP-телефония (VoIP)", "nameEn": "Voice over IP", "pattern": "peerToPeer", "protocol": "RTP",
+      "transactionSize": { "law": "constant", "value": 200 }, "timeBetween": { "law": "constant", "value": 0.02 } },
+    { "id": "bulk-data", "nameRu": "Передача больших файлов", "nameEn": "Bulk data transfer", "pattern": "peerToPeer", "protocol": "FTP",
+      "transactionSize": { "law": "normal", "mean": 5000000, "stdDev": 1000000 }, "timeBetween": { "law": "exponential", "mean": 30 } }
+  ],
+
+  "devices": [
+    // 1. Generic LANs — сегменты с общей средой
+    { "id": "seg-thick-eth", "nameRu": "Thick Ethernet segment (толстый коаксиал)", "nameEn": "Thick Ethernet segment", "kind": "segment", "icon": "bus", "standards": ["10base-5"], "defaultStandard": "10base-5", "ports": 100, "interfacePrefix": "Tap" },
+    { "id": "seg-thin-eth", "nameRu": "Thin Ethernet segment (тонкий коаксиал)", "nameEn": "Thin Ethernet segment", "kind": "segment", "icon": "bus", "standards": ["10base-2"], "defaultStandard": "10base-2", "ports": 30, "interfacePrefix": "Tap" },
+    { "id": "seg-token-ring", "nameRu": "Token Ring (кольцо)", "nameEn": "Token Ring", "kind": "segment", "icon": "ring", "standards": ["@tokenRing"], "defaultStandard": "tr-16", "ports": 250, "interfacePrefix": "Tr" },
+    { "id": "seg-fddi", "nameRu": "FDDI (двойное кольцо)", "nameEn": "FDDI ring", "kind": "segment", "icon": "ring", "standards": ["@fddi"], "defaultStandard": "fddi", "ports": 500, "interfacePrefix": "Fddi" },
+
+    // 2. Hubs
+    { "id": "hub-eth", "nameRu": "Ethernet Hub 10Base-T", "nameEn": "Ethernet Hub", "kind": "hub", "icon": "hub", "standards": ["10base-t", "10base-2", "10base-5", "10base-fl"], "defaultStandard": "10base-t", "ports": 16, "interfacePrefix": "Port" },
+    { "id": "hub-fast-eth", "nameRu": "Fast Ethernet Hub 100Base-TX", "nameEn": "Fast Ethernet Hub", "kind": "hub", "icon": "hub", "standards": ["100base-tx", "100base-t4", "100base-fx"], "defaultStandard": "100base-tx", "ports": 24, "interfacePrefix": "Port" },
+    { "id": "hub-dlink-de824", "nameRu": "D-Link DE-824TP (10/100)", "nameEn": "D-Link DE-824TP 10/100 hub", "vendor": "D-Link", "kind": "hub", "icon": "hub", "standards": ["10base-t", "100base-tx", "10base-2"], "defaultStandard": "10base-t", "ports": 24, "interfacePrefix": "Port" },
+    { "id": "hub-allied-10base2", "nameRu": "Allied Telesyn AT-MR820 (10Base-2/10Base-T)", "nameEn": "Allied Telesyn AT-MR820 (10Base-2)", "vendor": "Allied Telesyn", "kind": "hub", "icon": "hub", "standards": ["10base-2", "10base-t", "10base-5"], "defaultStandard": "10base-2", "ports": 8, "interfacePrefix": "Port" },
+    { "id": "hub-token-ring", "nameRu": "Token Ring MAU (концентратор)", "nameEn": "Token Ring MAU", "kind": "hub", "icon": "hub", "standards": ["@tokenRing"], "defaultStandard": "tr-16", "ports": 16, "interfacePrefix": "Ring" },
+    { "id": "hub-fddi", "nameRu": "FDDI концентратор", "nameEn": "FDDI concentrator", "kind": "hub", "icon": "hub", "standards": ["@fddi"], "defaultStandard": "fddi", "ports": 12, "interfacePrefix": "Fddi" },
+    { "id": "hub-intelligent", "nameRu": "Intelligent hub (управляемый концентратор)", "nameEn": "Intelligent hub", "kind": "hub", "icon": "hub", "standards": ["@ethernet"], "defaultStandard": "100base-tx", "ports": 24, "interfacePrefix": "Port" },
+
+    // 3. Switches
+    { "id": "switch-eth", "nameRu": "Ethernet Switch", "nameEn": "Ethernet Switch", "kind": "switch", "icon": "switch", "standards": ["@ethernet"], "defaultStandard": "100base-tx", "ports": 24, "interfacePrefix": "Fa0/", "processingDelayMs": 0.01 },
+    { "id": "switch-gigabit", "nameRu": "Gigabit Ethernet Switch", "nameEn": "Gigabit Ethernet Switch", "kind": "switch", "icon": "switch", "standards": ["@ethernet"], "defaultStandard": "1000base-t", "ports": 48, "interfacePrefix": "Gi0/", "processingDelayMs": 0.005 },
+    { "id": "switch-cisco-2960", "nameRu": "Cisco Catalyst 2960-24TT", "nameEn": "Cisco Catalyst 2960-24TT", "vendor": "Cisco", "kind": "switch", "icon": "switch", "standards": ["@ethernet"], "defaultStandard": "100base-tx", "ports": 26, "interfacePrefix": "Fa0/", "processingDelayMs": 0.01 },
+    { "id": "switch-token-ring", "nameRu": "Token Ring Switch", "nameEn": "Token Ring Switch", "kind": "switch", "icon": "switch", "standards": ["@tokenRing"], "defaultStandard": "tr-16", "ports": 16, "interfacePrefix": "Tr0/", "processingDelayMs": 0.02 },
+    { "id": "switch-fddi", "nameRu": "FDDI Switch", "nameEn": "FDDI Switch", "kind": "switch", "icon": "switch", "standards": ["@fddi", "@ethernet"], "defaultStandard": "fddi", "ports": 12, "interfacePrefix": "Fddi0/", "processingDelayMs": 0.02 },
+    { "id": "switch-multiprotocol", "nameRu": "Multiprotocol Switch", "nameEn": "Multiprotocol Switch", "kind": "switch", "icon": "switch", "standards": [], "defaultStandard": "100base-tx", "ports": 24, "interfacePrefix": "Port", "processingDelayMs": 0.02 },
+    { "id": "switch-eth-atm", "nameRu": "Ethernet to ATM switch", "nameEn": "Ethernet to ATM switch", "kind": "switch", "icon": "switch", "standards": ["@ethernet", "@atm"], "defaultStandard": "atm-155", "ports": 16, "interfacePrefix": "Port", "processingDelayMs": 0.03 },
+    { "id": "switch-atm-backbone", "nameRu": "ATM backbone switch", "nameEn": "ATM edge/backbone switch", "kind": "switch", "icon": "switch", "standards": ["@atm"], "defaultStandard": "atm-155", "ports": 16, "interfacePrefix": "Atm0/", "processingDelayMs": 0.02 },
+
+    // 4. FRADs
+    { "id": "frad", "nameRu": "FRAD (Frame Relay access device)", "nameEn": "Frame Relay access device (FRAD)", "kind": "frad", "icon": "frad", "standards": [], "defaultStandard": "frame-relay", "ports": 4, "interfacePrefix": "S0/", "processingDelayMs": 1 },
+
+    // 5. Routers and bridges
+    { "id": "router", "nameRu": "Router (маршрутизатор)", "nameEn": "Router", "kind": "router", "icon": "router", "standards": [], "defaultStandard": "100base-tx", "ports": 8, "interfacePrefix": "Fa0/", "processingDelayMs": 0.1 },
+    { "id": "router-cisco-1941", "nameRu": "Cisco 1941", "nameEn": "Cisco 1941", "vendor": "Cisco", "kind": "router", "icon": "router", "standards": [], "defaultStandard": "1000base-t", "ports": 4, "interfacePrefix": "Gi0/", "processingDelayMs": 0.1 },
+    { "id": "router-cisco-2901", "nameRu": "Cisco 2901", "nameEn": "Cisco 2901", "vendor": "Cisco", "kind": "router", "icon": "router", "standards": [], "defaultStandard": "1000base-t", "ports": 6, "interfacePrefix": "Gi0/", "processingDelayMs": 0.08 },
+    { "id": "router-cisco-7000", "nameRu": "Cisco 7000 (магистральный)", "nameEn": "Cisco 7000", "vendor": "Cisco", "kind": "router", "icon": "router", "standards": [], "defaultStandard": "fddi", "ports": 16, "interfacePrefix": "Port", "processingDelayMs": 0.05,
+      "descriptionRu": "Магистральный маршрутизатор с модулями Ethernet, FDDI, ATM Interface Processor.", "descriptionEn": "Backbone router with Ethernet, FDDI and ATM interface processors." },
+    { "id": "access-server", "nameRu": "Access server (сервер удалённого доступа)", "nameEn": "Access server", "kind": "accessServer", "icon": "accessserver", "standards": [], "defaultStandard": "10base-5", "ports": 16, "interfacePrefix": "Async", "processingDelayMs": 0.5 },
+    { "id": "bridge", "nameRu": "Bridge (мост)", "nameEn": "Bridge", "kind": "bridge", "icon": "bridge", "standards": [], "defaultStandard": "100base-tx", "ports": 2, "interfacePrefix": "Port", "processingDelayMs": 0.05 },
+    { "id": "bridge-translational", "nameRu": "Мост Ethernet–Token Ring (транслирующий)", "nameEn": "Translational bridge (Ethernet–Token Ring)", "kind": "bridge", "icon": "bridge", "standards": ["@ethernet", "@tokenRing"], "defaultStandard": "100base-tx", "ports": 2, "interfacePrefix": "Port", "processingDelayMs": 0.1 },
+
+    // 7. Media converters
+    { "id": "media-converter", "nameRu": "Медиаконвертер (витая пара ↔ оптика)", "nameEn": "Media converter (copper ↔ fiber)", "kind": "bridge", "icon": "converter", "standards": ["@ethernet"], "defaultStandard": "100base-fx", "ports": 2, "interfacePrefix": "Port", "processingDelayMs": 0.001 },
+    { "id": "transceiver", "nameRu": "Трансивер (приёмопередатчик)", "nameEn": "Transceiver", "kind": "bridge", "icon": "converter", "standards": ["@ethernet"], "defaultStandard": "10base-5", "ports": 2, "interfacePrefix": "Port", "processingDelayMs": 0.001 },
+
+    // 8. LAN Workstations
+    { "id": "pc", "nameRu": "PC (персональный компьютер)", "nameEn": "PC", "kind": "workstation", "icon": "pc", "standards": [], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Fa" },
+    { "id": "notebook", "nameRu": "Notebook (ноутбук)", "nameEn": "Notebook", "kind": "workstation", "icon": "notebook", "standards": [], "defaultStandard": "100base-tx", "ports": 2, "interfacePrefix": "Eth" },
+    { "id": "notebook-wireless", "nameRu": "Ноутбук с Wi-Fi адаптером", "nameEn": "Wireless notebook", "kind": "workstation", "icon": "notebook", "standards": ["@wireless", "@ethernet"], "defaultStandard": "802.11g", "ports": 2, "interfacePrefix": "Wlan" },
+    { "id": "pc-wireless", "nameRu": "PC с беспроводным адаптером", "nameEn": "Wireless PC", "kind": "workstation", "icon": "pc", "standards": ["@wireless", "@ethernet"], "defaultStandard": "802.11g", "ports": 2, "interfacePrefix": "Wlan" },
+    { "id": "ws-eth", "nameRu": "Ethernet workstation", "nameEn": "Ethernet workstation", "kind": "workstation", "icon": "workstation", "standards": ["@ethernet"], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Eth" },
+    { "id": "ws-token-ring", "nameRu": "Token Ring workstation", "nameEn": "Token Ring workstation", "kind": "workstation", "icon": "workstation", "standards": ["@tokenRing"], "defaultStandard": "tr-16", "ports": 1, "interfacePrefix": "Tr" },
+    { "id": "ws-fddi", "nameRu": "FDDI workstation", "nameEn": "FDDI workstation", "kind": "workstation", "icon": "workstation", "standards": ["@fddi"], "defaultStandard": "fddi", "ports": 1, "interfacePrefix": "Fddi" },
+    { "id": "ws-atm", "nameRu": "ATM workstation", "nameEn": "ATM workstation", "kind": "workstation", "icon": "workstation", "standards": ["@atm"], "defaultStandard": "atm-155", "ports": 1, "interfacePrefix": "Atm" },
+    { "id": "midrange", "nameRu": "Midrange system (IBM AS/400)", "nameEn": "Midrange system (IBM AS/400)", "vendor": "IBM", "kind": "mainframe", "icon": "mainframe", "standards": [], "defaultStandard": "tr-16", "ports": 4, "interfacePrefix": "Port" },
+
+    // 9. LAN Servers
+    { "id": "server", "nameRu": "Server (сервер)", "nameEn": "Server", "kind": "server", "icon": "server", "standards": [], "defaultStandard": "100base-tx", "ports": 2, "interfacePrefix": "Fa" },
+    { "id": "server-eth", "nameRu": "Ethernet server", "nameEn": "Ethernet server", "kind": "server", "icon": "server", "standards": ["@ethernet"], "defaultStandard": "100base-tx", "ports": 2, "interfacePrefix": "Eth" },
+    { "id": "server-token-ring", "nameRu": "Token Ring server", "nameEn": "Token Ring server", "kind": "server", "icon": "server", "standards": ["@tokenRing"], "defaultStandard": "tr-16", "ports": 1, "interfacePrefix": "Tr" },
+    { "id": "server-fddi", "nameRu": "FDDI server", "nameEn": "FDDI server", "kind": "server", "icon": "server", "standards": ["@fddi"], "defaultStandard": "fddi", "ports": 1, "interfacePrefix": "Fddi" },
+    { "id": "server-rack", "nameRu": "Стоечный сервер (Gigabit)", "nameEn": "Rack server (Gigabit)", "kind": "server", "icon": "server", "standards": ["@ethernet"], "defaultStandard": "1000base-t", "ports": 4, "interfacePrefix": "Gi" },
+
+    // 10. Audio/video
+    { "id": "ip-phone", "nameRu": "IP-телефон", "nameEn": "IP phone", "kind": "phone", "icon": "phone", "standards": ["@ethernet"], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Eth" },
+    { "id": "video-conf", "nameRu": "Система видеоконференций", "nameEn": "Videoconferencing system", "kind": "equipment", "icon": "video", "standards": [], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Eth" },
+    { "id": "webcam", "nameRu": "Веб-камера (IP)", "nameEn": "IP camera", "kind": "equipment", "icon": "video", "standards": [], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Eth" },
+
+    // 11. Supercomputers
+    { "id": "supercomputer", "nameRu": "Суперкомпьютер", "nameEn": "Supercomputer", "kind": "mainframe", "icon": "mainframe", "standards": [], "defaultStandard": "10gbase-sr", "ports": 4, "interfacePrefix": "Port" },
+
+    // 12. Peripheral equipment
+    { "id": "printer-network", "nameRu": "Сетевой принтер", "nameEn": "Network printer", "kind": "printer", "icon": "printer", "standards": [], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Eth" },
+    { "id": "printer", "nameRu": "Принтер (обычный)", "nameEn": "Printer", "kind": "printer", "icon": "printer", "standards": [], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Usb" },
+    { "id": "scanner", "nameRu": "Сканер", "nameEn": "Scanner", "kind": "equipment", "icon": "scanner", "standards": [], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Eth" },
+    { "id": "raid", "nameRu": "RAID-массив", "nameEn": "RAID system", "kind": "equipment", "icon": "storage", "standards": [], "defaultStandard": "1000base-sx", "ports": 2, "interfacePrefix": "Port" },
+    { "id": "backup", "nameRu": "Устройство резервного копирования", "nameEn": "Backup device", "kind": "equipment", "icon": "storage", "standards": [], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Port" },
+    { "id": "x-terminal", "nameRu": "X-терминал", "nameEn": "X terminal", "kind": "workstation", "icon": "terminal", "standards": [], "defaultStandard": "10base-t", "ports": 1, "interfacePrefix": "Eth" },
+    { "id": "medical-device", "nameRu": "Медицинское оборудование (томограф и т.п.)", "nameEn": "Medical equipment", "kind": "equipment", "icon": "equipment", "standards": [], "defaultStandard": "100base-tx", "ports": 1, "interfacePrefix": "Eth" },
+
+    // 13. Gateways
+    { "id": "gateway", "nameRu": "Шлюз (Gateway)", "nameEn": "Gateway", "kind": "gateway", "icon": "gateway", "standards": [], "defaultStandard": "100base-tx", "ports": 4, "interfacePrefix": "Port", "processingDelayMs": 0.5 },
+
+    // 14. SNA
+    { "id": "mainframe-ibm", "nameRu": "Мейнфрейм IBM", "nameEn": "IBM mainframe", "vendor": "IBM", "kind": "mainframe", "icon": "mainframe", "standards": [], "defaultStandard": "tr-16", "ports": 8, "interfacePrefix": "Port" },
+    { "id": "cluster-controller", "nameRu": "Контроллер кластера", "nameEn": "Cluster controller", "kind": "gateway", "icon": "gateway", "standards": [], "defaultStandard": "tr-16", "ports": 8, "interfacePrefix": "Port", "processingDelayMs": 0.5 },
+
+    // 15. PBX
+    { "id": "pbx", "nameRu": "Офисная АТС (PBX)", "nameEn": "PBX", "kind": "pbx", "icon": "pbx", "standards": [], "defaultStandard": "isdn-pri", "ports": 32, "interfacePrefix": "Line", "processingDelayMs": 1 },
+
+    // 16. Multiplexers
+    { "id": "mux-tdm", "nameRu": "Мультиплексор TDM", "nameEn": "Time division multiplexer", "kind": "multiplexer", "icon": "mux", "standards": [], "defaultStandard": "e1", "ports": 8, "interfacePrefix": "Ch", "processingDelayMs": 0.2 },
+    { "id": "mux-stat", "nameRu": "Статистический мультиплексор", "nameEn": "Statistical TDM", "kind": "multiplexer", "icon": "mux", "standards": [], "defaultStandard": "e1", "ports": 8, "interfacePrefix": "Ch", "processingDelayMs": 0.2 },
+    { "id": "mux-fiber", "nameRu": "Оптический мультиплексор", "nameEn": "Fiber optic multiplexer", "kind": "multiplexer", "icon": "mux", "standards": [], "defaultStandard": "stm-1", "ports": 24, "interfacePrefix": "Ch", "processingDelayMs": 0.1 },
+    { "id": "mux-inverse", "nameRu": "Инверсный мультиплексор", "nameEn": "Inverse multiplexer", "kind": "multiplexer", "icon": "mux", "standards": [], "defaultStandard": "t1", "ports": 8, "interfacePrefix": "Ch", "processingDelayMs": 0.2 },
+    { "id": "dcs", "nameRu": "Кросс-коннектор (DCS)", "nameEn": "Digital cross-connect system", "kind": "multiplexer", "icon": "mux", "standards": [], "defaultStandard": "stm-1", "ports": 32, "interfacePrefix": "Ch", "processingDelayMs": 0.1 },
+
+    // 17. SONET/SDH
+    { "id": "sdh-adm", "nameRu": "SDH Add/drop мультиплексор", "nameEn": "SDH add/drop multiplexer", "kind": "multiplexer", "icon": "mux", "standards": [], "defaultStandard": "stm-1", "ports": 16, "interfacePrefix": "Stm", "processingDelayMs": 0.05 },
+    { "id": "sdh-tm", "nameRu": "SDH терминальный мультиплексор", "nameEn": "SDH terminal multiplexer", "kind": "multiplexer", "icon": "mux", "standards": [], "defaultStandard": "stm-1", "ports": 16, "interfacePrefix": "Stm", "processingDelayMs": 0.05 },
+
+    // 18. CPE for ISDN
+    { "id": "isdn-ta", "nameRu": "ISDN терминальный адаптер", "nameEn": "ISDN terminal adapter", "kind": "modem", "icon": "modem", "standards": [], "defaultStandard": "isdn-bri", "ports": 2, "interfacePrefix": "Bri", "processingDelayMs": 1 },
+
+    // 19. Modems
+    { "id": "modem-dialup", "nameRu": "Телефонный модем (dial-up)", "nameEn": "Dial-up modem", "kind": "modem", "icon": "modem", "standards": [], "defaultStandard": "modem-56k", "ports": 2, "interfacePrefix": "Line", "processingDelayMs": 5 },
+    { "id": "modem-shortrange", "nameRu": "Модем short-range", "nameEn": "Short range modem", "kind": "modem", "icon": "modem", "standards": [], "defaultStandard": "e1", "ports": 2, "interfacePrefix": "Line", "processingDelayMs": 2 },
+    { "id": "modem-cable", "nameRu": "Кабельный модем", "nameEn": "Cable modem", "kind": "modem", "icon": "modem", "standards": [], "defaultStandard": "100base-tx", "ports": 2, "interfacePrefix": "Line", "processingDelayMs": 2 },
+    { "id": "modem-dsl", "nameRu": "DSL-модем", "nameEn": "DSL modem", "kind": "modem", "icon": "modem", "standards": [], "defaultStandard": "adsl", "ports": 2, "interfacePrefix": "Line", "processingDelayMs": 2 },
+    { "id": "modem-fiber", "nameRu": "Оптоволоконный модем", "nameEn": "Fiber optic modem", "kind": "modem", "icon": "modem", "standards": [], "defaultStandard": "100base-fx", "ports": 2, "interfacePrefix": "Line", "processingDelayMs": 0.5 },
+
+    // 20. DSU/CSU
+    { "id": "dsu-csu", "nameRu": "DSU/CSU", "nameEn": "DSU/CSU", "kind": "dsuCsu", "icon": "dsu", "standards": [], "defaultStandard": "t1", "ports": 2, "interfacePrefix": "Port", "processingDelayMs": 0.5 },
+
+    // 22. Clouds
+    { "id": "cloud-x25", "nameRu": "Сеть X.25", "nameEn": "X.25 network", "kind": "cloud", "icon": "cloud", "standards": [], "defaultStandard": "x25", "ports": 64, "interfacePrefix": "Port", "processingDelayMs": 50 },
+    { "id": "cloud-frame-relay", "nameRu": "Сеть Frame Relay", "nameEn": "Frame Relay network", "kind": "cloud", "icon": "cloud", "standards": [], "defaultStandard": "frame-relay", "ports": 64, "interfacePrefix": "Dlci", "processingDelayMs": 20 },
+    { "id": "cloud-atm", "nameRu": "Сеть ATM", "nameEn": "ATM network", "kind": "cloud", "icon": "cloud", "standards": [], "defaultStandard": "atm-155", "ports": 64, "interfacePrefix": "Port", "processingDelayMs": 5 },
+    { "id": "cloud-smds", "nameRu": "Сеть SMDS", "nameEn": "SMDS network", "kind": "cloud", "icon": "cloud", "standards": [], "defaultStandard": "t1", "ports": 64, "interfacePrefix": "Port", "processingDelayMs": 20 },
+    { "id": "cloud-pstn", "nameRu": "ТфОП (PSTN)", "nameEn": "PSTN", "kind": "cloud", "icon": "cloud", "standards": [], "defaultStandard": "modem-56k", "ports": 64, "interfacePrefix": "Line", "processingDelayMs": 30 },
+    { "id": "cloud-isdn", "nameRu": "Сеть ISDN", "nameEn": "ISDN network", "kind": "cloud", "icon": "cloud", "standards": [], "defaultStandard": "isdn-bri", "ports": 64, "interfacePrefix": "Bri", "processingDelayMs": 20 },
+    { "id": "cloud-internet", "nameRu": "Интернет", "nameEn": "Internet", "kind": "cloud", "icon": "cloud", "standards": [], "defaultStandard": "adsl", "ports": 256, "interfacePrefix": "Port", "processingDelayMs": 40 },
+    { "id": "cloud-satellite", "nameRu": "Спутниковый интернет", "nameEn": "Satellite Internet", "kind": "cloud", "icon": "satellite", "standards": [], "defaultStandard": "satellite", "ports": 64, "interfacePrefix": "Sat", "processingDelayMs": 270 },
+
+    // 23. Wireless LAN equipment
+    { "id": "ap-g", "nameRu": "Точка доступа 802.11g", "nameEn": "Access point 802.11g", "kind": "accessPoint", "icon": "ap", "standards": ["@wireless", "@ethernet"], "defaultStandard": "802.11g", "ports": 32, "interfacePrefix": "Wlan", "processingDelayMs": 0.1 },
+    { "id": "ap-n", "nameRu": "Точка доступа 802.11n", "nameEn": "Access point 802.11n", "kind": "accessPoint", "icon": "ap", "standards": ["@wireless", "@ethernet"], "defaultStandard": "802.11n", "ports": 50, "interfacePrefix": "Wlan", "processingDelayMs": 0.1 },
+    { "id": "ap-a", "nameRu": "Точка доступа 802.11a (5 ГГц)", "nameEn": "Access point 802.11a", "kind": "accessPoint", "icon": "ap", "standards": ["@wireless", "@ethernet"], "defaultStandard": "802.11a", "ports": 32, "interfacePrefix": "Wlan", "processingDelayMs": 0.1 },
+    { "id": "wireless-router", "nameRu": "Беспроводной маршрутизатор (точка доступа + роутер)", "nameEn": "Wireless router", "kind": "accessPoint", "icon": "ap", "standards": [], "defaultStandard": "802.11n", "ports": 32, "interfacePrefix": "Wlan", "processingDelayMs": 0.2 },
+    { "id": "wireless-bridge", "nameRu": "Беспроводной мост", "nameEn": "Wireless bridge", "kind": "bridge", "icon": "bridge", "standards": ["@wireless", "@ethernet"], "defaultStandard": "802.11g", "ports": 2, "interfacePrefix": "Wlan", "processingDelayMs": 0.1 },
+
+    // 24–25. Wireless telecom
+    { "id": "base-station", "nameRu": "Базовая станция сотовой связи", "nameEn": "Cellular base station", "kind": "router", "icon": "tower", "standards": [], "defaultStandard": "e1", "ports": 64, "interfacePrefix": "Port", "processingDelayMs": 10 },
+    { "id": "wireless-cpe", "nameRu": "Абонентский радиомодем (CPE)", "nameEn": "Wireless CPE", "kind": "modem", "icon": "modem", "standards": [], "defaultStandard": "e1", "ports": 2, "interfacePrefix": "Port", "processingDelayMs": 2 },
+
+    // 26. Satellite
+    { "id": "vsat", "nameRu": "Спутниковый терминал VSAT", "nameEn": "VSAT terminal", "kind": "modem", "icon": "satellite", "standards": [], "defaultStandard": "satellite", "ports": 2, "interfacePrefix": "Sat", "processingDelayMs": 5 },
+    { "id": "earth-station", "nameRu": "Персональная земная станция", "nameEn": "Personal earth station", "kind": "modem", "icon": "satellite", "standards": [], "defaultStandard": "satellite", "ports": 2, "interfacePrefix": "Sat", "processingDelayMs": 5 },
+
+    // 27. Security
+    { "id": "encryptor", "nameRu": "Шифратор канала", "nameEn": "Encryptor", "kind": "bridge", "icon": "encryptor", "standards": [], "defaultStandard": "100base-tx", "ports": 2, "interfacePrefix": "Port", "processingDelayMs": 0.5 },
+    { "id": "firewall", "nameRu": "Межсетевой экран (Firewall)", "nameEn": "Firewall", "kind": "firewall", "icon": "firewall", "standards": [], "defaultStandard": "100base-tx", "ports": 4, "interfacePrefix": "Gi0/", "processingDelayMs": 0.3 },
+
+    // 28. Buildings, Campuses and LAN Workgroups — контейнеры многоуровневых проектов (ПР6)
+    { "id": "cont-country", "nameRu": "Страна", "nameEn": "Country", "kind": "container", "icon": "country", "standards": [], "defaultStandard": "e1", "ports": 999, "interfacePrefix": "Uplink", "childBackground": "country" },
+    { "id": "cont-city", "nameRu": "Город", "nameEn": "City", "kind": "container", "icon": "city", "standards": [], "defaultStandard": "e1", "ports": 999, "interfacePrefix": "Uplink", "childBackground": "city" },
+    { "id": "cont-campus", "nameRu": "Кампус", "nameEn": "Campus", "kind": "container", "icon": "campus", "standards": [], "defaultStandard": "1000base-lx", "ports": 999, "interfacePrefix": "Uplink", "childBackground": "city" },
+    { "id": "cont-building", "nameRu": "Здание", "nameEn": "Building", "kind": "container", "icon": "building", "standards": [], "defaultStandard": "100base-fx", "ports": 999, "interfacePrefix": "Uplink", "childBackground": "building" },
+    { "id": "cont-floor", "nameRu": "Этаж", "nameEn": "Floor", "kind": "container", "icon": "floor", "standards": [], "defaultStandard": "100base-tx", "ports": 999, "interfacePrefix": "Uplink", "childBackground": "building" },
+    { "id": "cont-room", "nameRu": "Помещение (кабинет)", "nameEn": "Room", "kind": "container", "icon": "room", "standards": [], "defaultStandard": "100base-tx", "ports": 999, "interfacePrefix": "Uplink", "childBackground": "room" },
+    { "id": "cont-workgroup", "nameRu": "Рабочая группа ЛВС", "nameEn": "LAN workgroup", "kind": "container", "icon": "workgroup", "standards": [], "defaultStandard": "100base-tx", "ports": 999, "interfacePrefix": "Uplink", "childBackground": "room" }
+  ],
+
+  "categories": [
+    { "id": "c-generic-lans", "nameRu": "Generic LANs (сегменты ЛВС)", "nameEn": "Generic LANs", "icon": "ring", "items": ["seg-thick-eth", "seg-thin-eth", "seg-token-ring", "seg-fddi"] },
+    { "id": "c-hubs", "nameRu": "Hubs (концентраторы)", "nameEn": "Hubs", "icon": "hub", "children": [
+      { "id": "c-hubs-shared", "nameRu": "Shared media hubs", "nameEn": "Shared media hubs", "items": ["hub-eth", "hub-fast-eth", "hub-dlink-de824", "hub-allied-10base2", "hub-token-ring", "hub-fddi"] },
+      { "id": "c-hubs-intelligent", "nameRu": "Intelligent hubs", "nameEn": "Intelligent hubs", "items": ["hub-intelligent"] } ] },
+    { "id": "c-switches", "nameRu": "Switches (коммутаторы)", "nameEn": "Switches", "icon": "switch", "children": [
+      { "id": "c-sw-workgroup", "nameRu": "Workgroup", "nameEn": "Workgroup", "items": ["switch-eth", "switch-gigabit", "switch-cisco-2960", "switch-token-ring", "switch-fddi", "switch-multiprotocol"] },
+      { "id": "c-sw-eth-atm", "nameRu": "Ethernet (Token Ring) to ATM (FDDI)", "nameEn": "Ethernet (Token Ring) to ATM (FDDI)", "items": ["switch-eth-atm"] },
+      { "id": "c-sw-atm", "nameRu": "ATM edge and backbone", "nameEn": "ATM edge and backbone", "items": ["switch-atm-backbone"] } ] },
+    { "id": "c-frads", "nameRu": "FRADs", "nameEn": "FRADs", "icon": "frad", "items": ["frad"] },
+    { "id": "c-routers", "nameRu": "Routers and bridges (маршрутизаторы и мосты)", "nameEn": "Routers and bridges", "icon": "router", "children": [
+      { "id": "c-rt-lowend", "nameRu": "Low end", "nameEn": "Low end", "items": ["router", "router-cisco-1941", "router-cisco-2901"] },
+      { "id": "c-rt-backbone", "nameRu": "Backbone", "nameEn": "Backbone", "items": ["router-cisco-7000"] },
+      { "id": "c-rt-access", "nameRu": "Access servers", "nameEn": "Access servers", "items": ["access-server"] },
+      { "id": "c-rt-bridges", "nameRu": "Bridges", "nameEn": "Bridges", "items": ["bridge", "bridge-translational"] } ] },
+    { "id": "c-media", "nameRu": "Media adapters, converters and transceivers", "nameEn": "Media adapters, converters and transceivers", "icon": "converter", "items": ["media-converter", "transceiver"] },
+    { "id": "c-workstations", "nameRu": "LAN Workstations (рабочие станции)", "nameEn": "LAN Workstations", "icon": "pc", "children": [
+      { "id": "c-ws-pcs", "nameRu": "PCs and Notebooks", "nameEn": "PCs and Notebooks", "items": ["pc", "notebook", "pc-wireless", "notebook-wireless"] },
+      { "id": "c-ws-ws", "nameRu": "Workstations", "nameEn": "Workstations", "items": ["ws-eth", "ws-token-ring", "ws-fddi", "ws-atm"] },
+      { "id": "c-ws-midrange", "nameRu": "Midrange systems", "nameEn": "Midrange systems", "items": ["midrange"] } ] },
+    { "id": "c-servers", "nameRu": "LAN Servers (серверы)", "nameEn": "LAN Servers", "icon": "server", "items": ["server", "server-eth", "server-token-ring", "server-fddi", "server-rack"] },
+    { "id": "c-av", "nameRu": "Audio video equipment", "nameEn": "Audio video equipment", "icon": "video", "items": ["ip-phone", "video-conf", "webcam"] },
+    { "id": "c-super", "nameRu": "Supercomputers", "nameEn": "Supercomputers", "icon": "mainframe", "items": ["supercomputer"] },
+    { "id": "c-peripheral", "nameRu": "Peripheral equipment (периферия)", "nameEn": "Peripheral equipment", "icon": "printer", "items": ["printer-network", "printer", "scanner", "raid", "backup", "x-terminal", "medical-device"] },
+    { "id": "c-gateways", "nameRu": "Gateways (шлюзы)", "nameEn": "Gateways", "icon": "gateway", "items": ["gateway"] },
+    { "id": "c-sna", "nameRu": "SNA equipment", "nameEn": "SNA equipment", "icon": "mainframe", "items": ["mainframe-ibm", "cluster-controller"] },
+    { "id": "c-pbx", "nameRu": "PBX (офисные АТС)", "nameEn": "PBX", "icon": "pbx", "items": ["pbx"] },
+    { "id": "c-mux", "nameRu": "Multiplexers and digital cross-connect systems", "nameEn": "Multiplexers and DCS", "icon": "mux", "items": ["mux-tdm", "mux-stat", "mux-fiber", "mux-inverse", "dcs"] },
+    { "id": "c-sdh", "nameRu": "SONET/SDH equipment", "nameEn": "SONET/SDH equipment", "icon": "mux", "items": ["sdh-adm", "sdh-tm"] },
+    { "id": "c-isdn", "nameRu": "CPE for ISDN", "nameEn": "CPE for ISDN", "icon": "modem", "items": ["isdn-ta"] },
+    { "id": "c-modems", "nameRu": "Modems (модемы)", "nameEn": "Modems", "icon": "modem", "items": ["modem-dialup", "modem-shortrange", "modem-cable", "modem-dsl", "modem-fiber"] },
+    { "id": "c-dsu", "nameRu": "DSU/CSU", "nameEn": "DSU/CSU", "icon": "dsu", "items": ["dsu-csu"] },
+    { "id": "c-software", "nameRu": "Network and enterprise software (ПО)", "nameEn": "Network and enterprise software", "icon": "software", "isSoftware": true, "children": [
+      { "id": "c-sw-nos", "nameRu": "Network operation systems", "nameEn": "Network operation systems", "isSoftware": true, "items": ["sw-nos-windows", "sw-nos-linux", "sw-nos-netware"] },
+      { "id": "c-sw-server", "nameRu": "Server software", "nameEn": "Server software", "isSoftware": true, "items": ["sw-small-office-db", "sw-sql-server", "sw-file-server", "sw-ftp-server", "sw-http-server", "sw-email-server", "sw-print-server", "sw-video-server", "sw-billing"] },
+      { "id": "c-sw-intranet", "nameRu": "Intranet software", "nameEn": "Intranet software", "isSoftware": true, "items": ["sw-intranet"] } ] },
+    { "id": "c-clouds", "nameRu": "Clouds (глобальные сети)", "nameEn": "Clouds", "icon": "cloud", "items": ["cloud-x25", "cloud-frame-relay", "cloud-atm", "cloud-smds", "cloud-pstn", "cloud-isdn", "cloud-internet"] },
+    { "id": "c-wlan", "nameRu": "Wireless LAN equipment (беспроводные ЛВС)", "nameEn": "Wireless LAN equipment", "icon": "ap", "children": [
+      { "id": "c-wlan-adapters", "nameRu": "Wireless LAN adapters (станции с адаптерами)", "nameEn": "Wireless LAN adapters", "items": ["pc-wireless", "notebook-wireless"] },
+      { "id": "c-wlan-ap", "nameRu": "Access points and bridges", "nameEn": "Access points and bridges", "items": ["ap-g", "ap-n", "ap-a", "wireless-router", "wireless-bridge"] } ] },
+    { "id": "c-wtelecom", "nameRu": "Wireless telecommunication equipment", "nameEn": "Wireless telecommunication equipment", "icon": "tower", "items": ["base-station"] },
+    { "id": "c-wcpe", "nameRu": "CPE for wireless telecom", "nameEn": "CPE for wireless telecom", "icon": "modem", "items": ["wireless-cpe"] },
+    { "id": "c-satellite", "nameRu": "Satellite communication equipment", "nameEn": "Satellite communication equipment", "icon": "satellite", "items": ["vsat", "earth-station", "cloud-satellite"] },
+    { "id": "c-security", "nameRu": "Security (безопасность)", "nameEn": "Security", "icon": "firewall", "children": [
+      { "id": "c-sec-enc", "nameRu": "Encryption products", "nameEn": "Encryption products", "items": ["encryptor"] },
+      { "id": "c-sec-fw", "nameRu": "Firewalls", "nameEn": "Firewalls", "items": ["firewall"] } ] },
+    { "id": "c-buildings", "nameRu": "Buildings, Campuses and LAN Workgroups", "nameEn": "Buildings, Campuses and LAN Workgroups", "icon": "building", "items": ["cont-country", "cont-city", "cont-campus", "cont-building", "cont-floor", "cont-room", "cont-workgroup"] }
+  ]
+}
